@@ -73,3 +73,17 @@
 .hrcss {
     box-shadow: 0 0 8px white; /* White surrounding shadow */
 }
+.progress-bar {
+    background: var(--jet);
+    width: 150%;
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.progress-fill {
+    /* width: 90%; */
+    background: white; /* Changed to white */
+    height: 100%;
+    border-radius: inherit;
+}

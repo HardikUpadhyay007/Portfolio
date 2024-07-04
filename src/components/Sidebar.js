@@ -4,10 +4,10 @@ import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Sidebar.css";
 export const Sidebar = () => {
     return (
-        <div className="w-68 text-custom-grey relative bottom-[-7.5rem] top-15 h-full  mx-1 my-3 mb-0  z-10 bg-eerie-grey border border-gray-800 rounded-xl p-2 shadow-md">
+        <div className="w-68 text-custom-grey boxshadow relative bottom-[-7.5rem] top-13 h-full  mx-1 my-3 mb-0  z-10 bg-eerie-grey border border-gray-800 rounded-xl p-2 shadow-md">
             <div className="flex items-center flex-col">
                 <figure className="bg-avatar-color p-5 m-3 rounded-xl">
-                    <img src={AvatarImg} className="w-[80px]"></img>
+                    <img src={AvatarImg} className=""></img>
                 </figure>
                 <div className="flex flex-col items-center text-white mt-4 font-poppins">
                     <h2 className="text-2xl font-bold tracking-wide m-4">
@@ -48,9 +48,15 @@ export const Sidebar = () => {
                         </div>
                     </li>
                     <li className="flex flex-row items-center min-w-full gap-[16px] mb-7">
-                        <div className="w-12 h-12 card-color border border-white rounded-lg text-lg flex items-center justify-center">
-                            <FaLinkedin className="text-white" />
-                        </div>
+                        <a
+                            href="https://www.linkedin.com/in/hardikkupadhyay"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="w-12 h-12 card-color border border-white rounded-lg text-lg flex items-center justify-center">
+                                <FaLinkedin className="text-white" />
+                            </div>
+                        </a>
                         <div className="flex flex-col items-start justify-center">
                             <span className="ml-4 text-xs text-white">
                                 LinkedIn
@@ -65,13 +71,31 @@ export const Sidebar = () => {
 
                 <ul className="flex pl-8 flex-row justify-center items-center gap-y-2 text-white">
                     <li className=" mr-6">
-                        <i className="fab fa-github"></i>
+                        <a
+                            href="https://github.com/HardikUpadhyay007"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="fab fa-github"></i>
+                        </a>
                     </li>
                     <li className="mr-6">
-                        <i className="fab fa-instagram"></i>
+                        <a
+                            href="https://www.instagram.com/hardikkupadhyay"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="fab fa-instagram"></i>
+                        </a>
                     </li>
                     <li className="mr-6">
-                        <i className="fas fa-code"></i>
+                        <a
+                            href="https://leetcode.com/u/hardikupadhyay"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="fas fa-code"></i>
+                        </a>
                     </li>
                 </ul>
             </div>

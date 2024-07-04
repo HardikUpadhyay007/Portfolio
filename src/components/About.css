@@ -97,40 +97,58 @@
 /* ---------------------------------------------------------------------------------------- */
 
 .scroll-wrapper {
-    max-height: auto;
     display: flex;
     overflow-x: auto;
-    padding-bottom: 25px;
+    overflow-y: hidden;
+    padding: 20px;
+    gap: 20px;
+    width: auto; /* Adjust as needed */
+    scroll-snap-type: x mandatory;
 }
+
 .scroll-item {
-    min-width: 200px;
-    height: 110px;
-    margin-right: 2px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 }
 
-/* Style the scrollbar track */
-.scroll-wrapper::-webkit-scrollbar-track {
-    margin-top: 10px;
-    background: #f0f0f0; /* Light grey background */
-    border-radius: 10px;
-}
-
-/* Style the scrollbar thumb */
-.scroll-wrapper::-webkit-scrollbar-thumb {
-    background: #888; /* Darker grey scrollbar thumb */
-    border-radius: 10px; /* Optional: round corners for the scrollbar thumb */
-}
-
-/* Handle the scrollbar size */
-.scroll-wrapper::-webkit-scrollbar {
-    width: 3px; /* Width of the vertical scrollbar */
-    height: 8px; /* Height of the horizontal scrollbar */
-}
-
-/* .card-color {
-    background: var(--bg-gradient-jet);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+.card-color-item {
+    background: hsl(240, 3%, 12%);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     border: 2px solid transparent;
-    border-image: var(--border-gradient-onyx);
-    min-width: calc(50% - 10px);
-} */
+}
+
+.scroll-item {
+    min-width: 35rem; /* Ensures the card's width is fixed */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.scroll-item h1 {
+    margin-bottom: 10px;
+}
+
+/* Style the scrollbar for .scroll-wrapper */
+.scroll-wrapper::-webkit-scrollbar {
+    width: 5px; /* Makes the scrollbar thin */
+    height: 7%;
+}
+
+.scroll-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light grey track */
+    border-radius: 10px; /* Rounded corners of the track */
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Dark grey thumb */
+    border-radius: 10px; /* Rounded corners of the thumb */
+    border: 2px solid #f0f0f0; /* Optional: Adds a border around the thumb */
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker shade on hover for better visibility */
+}

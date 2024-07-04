@@ -1,0 +1,36 @@
+.scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+    width: 80vw; /* Adjust as needed */
+    scroll-snap-type: x mandatory;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+/* .card-color {
+    background: hsl(240, 3%, 12%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, white, black);
+    border-image-slice: 1;
+} */
+
+.scroll-item {
+    min-width: 35rem; /* Ensures the card's width is fixed */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.scroll-item h1 {
+    margin-bottom: 10px;
+}

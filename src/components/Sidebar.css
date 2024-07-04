@@ -101,3 +101,7 @@
     border-image: var(--border-gradient-onyx);
     min-width: calc(10% - 10px);
 }
+
+.boxshadow {
+    box-shadow: 0 0 10px #fff;
+}

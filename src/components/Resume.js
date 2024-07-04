@@ -69,22 +69,36 @@ export const Resume = () => {
                     <div class="timeline-middle">
                         <div class="timeline-circle"></div>
                     </div>
-                    <div class="timeline-component timeline-content">
-                        <h3 className="text-xl underline mb-1.5">Portfolio</h3>
-                        <p>
-                            My portfolio to pratice and brush up my development
-                            skills.
-                        </p>
-                    </div>
-                    <div class="timeline-component timeline-content">
-                        <h3 className="text-xl underline mb-1.5">
-                            Automobile Display Website
-                        </h3>
-                        <p>
-                            Created a display website for a business store to
-                            establish online presence.
-                        </p>
-                    </div>
+                    <a
+                        href="https://github.com/HardikUpadhyay007/Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="timeline-component timeline-content">
+                            <h3 className="text-xl underline mb-1.5">
+                                Portfolio
+                            </h3>
+                            <p>
+                                My portfolio to pratice and brush up my
+                                development skills.
+                            </p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://github.com/HardikUpadhyay007/automobile-final"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="timeline-component timeline-content">
+                            <h3 className="text-xl underline mb-1.5">
+                                Automobile Display Website
+                            </h3>
+                            <p>
+                                Created a display website for a business store
+                                to establish online presence.
+                            </p>
+                        </div>
+                    </a>
                     <div class="timeline-middle">
                         <div class="timeline-circle"></div>
                     </div>
@@ -95,15 +109,21 @@ export const Resume = () => {
                     <div class="timeline-middle">
                         <div class="timeline-circle"></div>
                     </div>
-                    <div class=" timeline-component timeline-content">
-                        <h3 className="text-xl underline mb-1.5">
-                            Spotify Clone
-                        </h3>
-                        <p>
-                            Developed a Spotify clone to enhance my development
-                            skills.
-                        </p>
-                    </div>
+                    <a
+                        href="https://github.com/HardikUpadhyay007/Spotify-Clone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class=" timeline-component timeline-content">
+                            <h3 className="text-xl underline mb-1.5">
+                                Spotify Clone
+                            </h3>
+                            <p>
+                                Developed a Spotify clone to enhance my
+                                development skills.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div className="hrcss w-[15rem] h-[6px] bg-white rounded-lg mt-10"></div>
 
@@ -112,17 +132,121 @@ export const Resume = () => {
                         My Skills Measure
                     </h2>
                     <ul className="ml-[-15rem]">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Tailwind CSS</li>
-                        <li>React JS</li>
-                        <li>Node JS</li>
-                        <li>Express JS</li>
-                        <li>Javascript</li>
-                        <li>MongoDB</li>
-                        <li>SQL</li>
-                        <li>C++</li>
-                        <li>Python</li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    HTML
+                                </h3>
+                                <p className="text-custom-grey text-xl">90%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[90%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">CSS</h3>
+                                <p className=" text-custom-grey text-xl">80%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[80%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    Tailwind CSS
+                                </h3>
+                                <p className=" text-custom-grey text-xl">70%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[70%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    React JS
+                                </h3>
+                                <p className=" text-custom-grey text-xl">60%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[60%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    Node JS
+                                </h3>
+                                <p className=" text-custom-grey text-xl">80%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[80%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    Express JS
+                                </h3>
+                                <p className=" text-custom-grey text-xl">75%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[75%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    Javascript
+                                </h3>
+                                <p className=" text-custom-grey text-xl">80%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[80%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    MongoDB
+                                </h3>
+                                <p className=" text-custom-grey text-xl">60%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[60%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">SQL</h3>
+                                <p className=" text-custom-grey text-xl">75%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[75%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">C++</h3>
+                                <p className=" text-custom-grey text-xl">90%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[90%]"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex flex-row">
+                                <h3 className="text-xl text-white mr-5">
+                                    Python
+                                </h3>
+                                <p className=" text-custom-grey text-xl">70%</p>
+                            </div>
+                            <div className="progress-bar">
+                                <div className="progress-fill w-[70%]"></div>
+                            </div>
+                        </li>
                     </ul>
                 </section>
             </section>

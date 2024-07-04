@@ -1,45 +1,63 @@
 import React from "react";
+import StarsCanvas from "./components/Star";
+import "./App.css"; // Ensure you have some basic styles for your app
 import {
     BrowserRouter as Router,
     Route,
     Routes,
+    Link,
     NavLink,
 } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import Sidebar from "./components/Sidebar"; // Assuming Sidebar is imported
+import Sidebar from "./components/Sidebar";
 import "./components/Sidebar.css";
-function App() {
+const App = () => {
     return (
-        <div className="relative min-h-screen bg-black">
-            {" "}
-            {/* Ensure this div is relatively positioned */}
-            <nav className="absolute card-color top-[-1rem] right-[18rem] z-2 font-poppins font-semibold p-4 bg-avatar-color text-white rounded-2xl">
-                <ul className="flex flex-row gap-x-4">
-                    {" "}
-                    {/* Adjusted for vertical layout */}
-                    <li className="hover:text-gray-300 cursor-pointer">
-                        <NavLink to="/">About</NavLink>
-                    </li>
-                    <li className="hover:text-gray-300 cursor-pointer">
-                        <NavLink to="/resume">Resume</NavLink>
-                    </li>
-                    <li className="hover:text-gray-300 cursor-pointer">
-                        <NavLink to="/contact">Contact</NavLink>
-                    </li>
-                </ul>
-            </nav>
-            <div className="flex flex-row justify-center mt-12 gap-x-10">
-                <Sidebar></Sidebar>
-                <Routes>
-                    <Route path="/" element={<About />} />
-                    <Route path="/resume" element={<Resume />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
+        <div className="relative w-full mb-10">
+            <StarsCanvas />
+            <div className="relative z-30">
+                <div className="flex flex-row justify-center mt-12 gap-x-10">
+                    {/* <div className="flex flex-row justify-center mt-12 gap-x-10"> */}
+                    <Sidebar></Sidebar>
+                    <Routes>
+                        <Route path="/" element={<About />} />
+                        <Route path="/resume" element={<Resume />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                    <nav className="">
+                        <ul className="navbar flex flex-col bg-custom-grey gap-y-4 ">
+                            <li className="card-color rounded-lg">
+                                <a href="#">
+                                    <Link to="/">
+                                        <i class="fas fa-user "></i>
+                                        <span>About</span>
+                                    </Link>
+                                </a>
+                            </li>
+                            <li className="card-color rounded-lg">
+                                <a href="#">
+                                    <Link to="/resume">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span>Resume</span>
+                                    </Link>
+                                </a>
+                            </li>
+                            <li className="card-color rounded-lg">
+                                <a href="#">
+                                    <Link to="/contact">
+                                        <i class="fas fa-phone"></i>
+                                        <span>Contact</span>
+                                    </Link>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     );
-}
+};
 
 export default App;
