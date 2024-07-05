@@ -105,3 +105,75 @@
 .boxshadow {
     box-shadow: 0 0 10px #fff;
 }
+@media (max-width: 480px) {
+    /* Styles for small phones */
+    .main-div {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap as needed */
+        align-items: center; /* Center items vertically */
+        width: 98%; /* Increase width */
+        height: auto; /* Adjust height to content */
+        flex-direction: row;
+        margin-top: -13%;
+        margin-left: 0.79%;
+        box-shadow: none;
+    }
+    .figure {
+        width: 50%;
+        height: auto;
+        margin-right: 10px; /* Add some space between the figure and the headings */
+        margin-top: 2%;
+    }
+    .figure-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .name-heading {
+        display: flex;
+        margin-top: -1rem;
+        margin-left: 1.2rem;
+        margin-right: 0.5rem;
+        justify-content: center;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    .name {
+        margin-right: 1rem;
+    }
+    .second-heading {
+        margin-top: -0.5rem;
+        margin-left: -1rem;
+    }
+
+    .main-div .main-div .w-full.px-2 {
+        display: none; /* Hide all direct children of main-div except the first one (which contains the avatar) */
+    }
+    /* Display the two headings in a row next to the figure */
+}
+
+/* Larger phones */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Styles for larger phones */
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets in portrait mode */
+}
+
+/* Tablets (landscape) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for tablets in landscape mode */
+}
+
+/* Small laptops */
+@media (min-width: 1201px) and (max-width: 1440px) {
+    /* Styles for small laptops */
+}
+
+/* Larger screens */
+@media (min-width: 1441px) {
+    /* Styles for larger screens */
+}

@@ -99,3 +99,51 @@ html {
     border-image: var(--border-gradient-onyx);
     min-width: calc(10% - 10px);
 }
+
+/* Small phones */
+@media (max-width: 480px) {
+    /* Styles for small phones */
+    .main-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        margin-top: -8rem;
+        position: fixed; /* Make navbar fixed position */
+        bottom: 0; /* Anchor navbar to the bottom */
+        left: 0; /* Align navbar to the left */
+        width: 100%; /* Ensure navbar spans the full width */
+        z-index: 1000;
+    }
+    .about {
+        width: 100%; /* Set width to 90% for the .about section */
+        margin: auto; /* Center the .about section horizontally */
+    }
+}
+
+/* Larger phones */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Styles for larger phones */
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets in portrait mode */
+}
+
+/* Tablets (landscape) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for tablets in landscape mode */
+}
+
+/* Small laptops */
+@media (min-width: 1201px) and (max-width: 1440px) {
+    /* Styles for small laptops */
+}
+
+/* Larger screens */
+@media (min-width: 1441px) {
+    /* Styles for larger screens */
+}

@@ -2,18 +2,20 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaDatabase, FaKeyboard, FaLaptopCode } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
-import { PiCertificateBold } from "react-icons/pi";
 import { GiStarsStack } from "react-icons/gi";
-import { FaTrophy } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { FaStairs } from "react-icons/fa6";
+import { CiPen } from "react-icons/ci";
+
 import "./About.css";
 
 export const About = () => {
     return (
-        <div className="w-2/4 font-poppins bg-eerie-grey overflow-y-auto border border-gray-800 rounded-xl p-8 shadow-md ">
-            <h1 className="text-4xl text-custom-grey font-bold">About Me</h1>
+        <div className="w-2/4 font-poppins container bg-eerie-grey overflow-y-auto border border-gray-800 rounded-xl p-8 shadow-md ">
+            <h1 className="text-4xl main-heading text-custom-grey font-bold">
+                About Me
+            </h1>
             <div className="w-6 h-[6px] bg-white rounded-lg mt-4"></div>
-            <section className="mt-9 mb-9 space-y-6 text-custom-grey">
+            <section className="mt-9 mb-9 para-div space-y-6 text-custom-grey">
                 <p className="">
                     Hii there!, I'm second year computer science engineering
                     student from Punjab, India proficient in creating web
@@ -32,66 +34,72 @@ export const About = () => {
                     my expertise and make a meaningful impact.
                 </p>
             </section>
-            <section className="mb-8 text-custom-grey">
-                <h1 className="text-3xl font-bold text-white mb-8">Skills</h1>
-                <ul className="grid grid-cols-2 gap-5 text-white">
-                    <li className="card-color p-4 rounded-xl flex flex-row justify-center items-center gap-10">
-                        <FaKeyboard className="text-3xl" />
-                        <div className="flex flex-col">
+            <section className="mb-8 text-custom-grey second-div">
+                <h1 className="text-3xl font-bold second-main-heading text-white mb-8">
+                    Skills
+                </h1>
+                <ul className="grid grid-cols-2 tech-list gap-5 text-white">
+                    <li className="card-color tech-item p-4 rounded-xl flex flex-row justify-center items-center gap-10">
+                        <FaKeyboard className="text-3xl icon-item" />
+                        <div className="flex text-item flex-col">
                             <h1 className="text-xl mb-3 font-semibold">
                                 Programming Language
                             </h1>
-                            <p className="text-base">C++, Python, C, Java</p>
+                            <p className="text-base para-text">
+                                C++, Python, C, Java
+                            </p>
                         </div>
                     </li>
 
-                    <li className="card-color p-4 rounded-xl flex flex-row justify-center items-center gap-10">
+                    <li className="card-color p-4 tech-item rounded-xl flex flex-row justify-center items-center gap-10">
                         <MdOutlineDesignServices className="text-3xl" />
-                        <div className="flex flex-col">
+                        <div className="flex text-item flex-col">
                             <h1 className="text-xl mb-3 font-semibold">
                                 FrontEnd Technologies
                             </h1>
-                            <p className="text-base">
+                            <p className="text-base para-text">
                                 HTML, CSS, Javascript,<br></br>Tailwind, ReactJs
                             </p>
                         </div>
                     </li>
-                    <li className="card-color p-4 rounded-xl flex flex-row justify-center items-center gap-10">
+                    <li className="card-color p-4 rounded-xl tech-item flex flex-row justify-center items-center gap-10">
                         <FaLaptopCode className="text-3xl" />
-                        <div className="flex flex-col">
+                        <div className="flex text-item flex-col">
                             <h1 className="text-xl mb-3 font-semibold">
                                 BackEnd Technologies
                             </h1>
-                            <p className="text-base">
+                            <p className="text-base para-text">
                                 Javascript, NodeJS, ExpressJS
                             </p>
                         </div>
                     </li>
-                    <li className="card-color p-7 pl-[4.1rem] rounded-xl flex flex-row items-center gap-10">
+                    <li className="card-color p-4 rounded-xl tech-item flex flex-row justify-center items-center gap-10">
                         <FaDatabase className="text-3xl" />
-                        <div className="flex flex-col">
+                        <div className="flex text-item flex-col">
                             <h1 className="text-xl mb-3 font-semibold">
-                                Database
+                                Database Technologies
                             </h1>
-                            <p className="text-base">MongoDB, SQL</p>
+                            <p className="text-base para-text">
+                                Mongo DB , SQL
+                            </p>
                         </div>
                     </li>
                 </ul>
             </section>
-            <section>
-                <h3 className="font-semibold text-3xl text-white mb-6">
-                    Achievements
+            <section className="scroll-sction">
+                <h3 className="font-semibold scroll-heading text-3xl text-white mb-6">
+                    What I Am Doing
                 </h3>
                 <ul class="scroll-wrapper">
                     <li class="scroll-item card-color-item ">
                         <i class="fas text-7xl font-extralight text-white">
-                            <PiCertificateBold></PiCertificateBold>
+                            <FaStairs></FaStairs>
                         </i>
                         <div class="flex flex-col">
                             <h1 class="text-xl mb-3 font-semibold text-white">
-                                Certificate
+                                Learning
                             </h1>
-                            <p class="text-base text-white">MongoDB, SQL</p>
+                            <p class="text-base text-white">ReactJS , NextJS</p>
                         </div>
                     </li>
                     <li class="scroll-item card-color-item ">
@@ -100,18 +108,25 @@ export const About = () => {
                         </i>
                         <div class="flex flex-col">
                             <h1 class="text-xl mb-3 font-semibold text-white">
-                                Certificate
+                                Certification
                             </h1>
-                            <p class="text-base text-white">MongoDB, SQL</p>
+                            <p class="text-base text-white">
+                                DSA (Abdul Bari) , AI Certification (Google
+                                Cloud)
+                            </p>
                         </div>
                     </li>
                     <li class="scroll-item card-color-item ">
-                        <i class="fas fa-certificate text-7xl text-white"></i>
+                        <i class="text-7xl text-white">
+                            <CiPen></CiPen>
+                        </i>
                         <div class="flex flex-col">
                             <h1 class="text-xl mb-3 font-semibold text-white">
-                                Certificate
+                                Upsolving
                             </h1>
-                            <p class="text-base text-white">MongoDB, SQL</p>
+                            <p class="text-base text-white">
+                                80+ Problems (Leetcode)
+                            </p>
                         </div>
                     </li>
                 </ul>

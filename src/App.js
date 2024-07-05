@@ -15,14 +15,17 @@ import Sidebar from "./components/Sidebar";
 import "./components/Sidebar.css";
 const App = () => {
     return (
-        <div className="relative w-full mb-10">
+        <div className=" relative w-full mb-10">
             <StarsCanvas />
-            <div className="relative z-30">
-                <div className="flex flex-row justify-center mt-12 gap-x-10">
+            <div className=" relative z-30">
+                <div className="flex main-div flex-row justify-center mt-12 gap-x-10">
                     {/* <div className="flex flex-row justify-center mt-12 gap-x-10"> */}
-                    <Sidebar></Sidebar>
+                    <Sidebar className="sidebar"></Sidebar>
                     <Routes>
-                        <Route path="/" element={<About />} />
+                        <Route
+                            path="/"
+                            element={<About className="about-div" />}
+                        />
                         <Route path="/resume" element={<Resume />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>

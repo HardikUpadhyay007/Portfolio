@@ -4,16 +4,16 @@ import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Sidebar.css";
 export const Sidebar = () => {
     return (
-        <div className="w-68 text-custom-grey boxshadow relative bottom-[-7.5rem] top-13 h-full  mx-1 my-3 mb-0  z-10 bg-eerie-grey border border-gray-800 rounded-xl p-2 shadow-md">
-            <div className="flex items-center flex-col">
+        <div className="w-68 text-custom-grey main-div boxshadow relative bottom-[-7.5rem] top-13 h-full  mx-1 my-3 mb-0  z-10 bg-eerie-grey border border-gray-800 rounded-xl p-2 shadow-md">
+            <div className="flex figure-div items-center flex-col">
                 <figure className="bg-avatar-color p-5 m-3 rounded-xl">
                     <img src={AvatarImg} className=""></img>
                 </figure>
-                <div className="flex flex-col items-center text-white mt-4 font-poppins">
-                    <h2 className="text-2xl font-bold tracking-wide m-4">
+                <div className="flex flex-col name-heading items-center text-white mt-4 font-poppins">
+                    <h2 className="text-2xl font-bold name tracking-wide m-4">
                         Hardik Upadhyay
                     </h2>
-                    <h4 className="text-base border rounded-xl card-color">
+                    <h4 className="text-base second-heading border rounded-xl card-color">
                         full stack developer
                     </h4>
                 </div>
