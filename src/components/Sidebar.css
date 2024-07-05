@@ -124,6 +124,15 @@
         margin-right: 10px; /* Add some space between the figure and the headings */
         margin-top: 2%;
     }
+    .figure-div figure {
+        padding: 5px; /* Increased from p-5 for a larger area */
+        width: 150%;
+    }
+
+    .avatar-img {
+        width: 150%; /* Ensure the image fills the figure element */
+        height: auto; /* Maintain aspect ratio */
+    }
     .figure-div {
         width: 100%;
         display: flex;
