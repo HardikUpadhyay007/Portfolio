@@ -232,6 +232,12 @@
         height: 8rem;
         margin-bottom: -1rem;
     }
+    .text-item-head-one {
+        margin-left: 10%;
+    }
+    .text-item-head-two {
+        margin-left: 10%;
+    }
 }
 
 /* Larger phones */

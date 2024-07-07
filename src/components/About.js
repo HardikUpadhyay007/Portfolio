@@ -54,7 +54,7 @@ export const About = () => {
                     <li className="card-color p-4 tech-item rounded-xl flex flex-row justify-center items-center gap-10">
                         <MdOutlineDesignServices className="text-3xl" />
                         <div className="flex text-item flex-col">
-                            <h1 className="text-xl text-item-head mb-3 font-semibold">
+                            <h1 className="text-xl text-item-head text-item-head-one mb-3 font-semibold">
                                 FrontEnd Technologies
                             </h1>
                             <p className="text-base text-item-para para-text">
@@ -65,7 +65,7 @@ export const About = () => {
                     <li className="card-color p-4 rounded-xl tech-item flex flex-row justify-center items-center gap-10">
                         <FaLaptopCode className="text-3xl" />
                         <div className="flex text-item flex-col">
-                            <h1 className="text-xl text-item-head mb-3 font-semibold">
+                            <h1 className="text-xl text-item-head text-item-head-two mb-3 font-semibold">
                                 BackEnd Technologies
                             </h1>
                             <p className="text-base text-item-para para-text">
