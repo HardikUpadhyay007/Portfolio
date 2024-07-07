@@ -7,7 +7,7 @@
 }
 @media (max-width: 480px) {
     .contact-div {
-        margin-top: 32%;
+        margin-top: 39%;
         margin-left: -0.98%;
         width: 96%; /* Make the div span the full width of the viewport */
         display: flex; /* Use flexbox to center the form */

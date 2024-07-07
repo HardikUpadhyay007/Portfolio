@@ -112,7 +112,7 @@ html {
         flex-direction: row;
         margin-top: -8rem;
         position: fixed; /* Make navbar fixed position */
-        bottom: 0; /* Anchor navbar to the bottom */
+        bottom: -1.5%; /* Anchor navbar to the bottom */
         left: 0; /* Align navbar to the left */
         width: 100%; /* Ensure navbar spans the full width */
         z-index: 1000;
@@ -120,6 +120,10 @@ html {
     .about {
         width: 100%; /* Set width to 90% for the .about section */
         margin: auto; /* Center the .about section horizontally */
+    }
+    .navbar li:hover span,
+    .navbar li.clicked span {
+        display: none;
     }
 }
 

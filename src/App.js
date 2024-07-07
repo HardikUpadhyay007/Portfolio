@@ -35,7 +35,7 @@ const App = () => {
                                 <a href="#">
                                     <Link to="/">
                                         <i class="fas fa-user "></i>
-                                        <span>About</span>
+                                        {/* <span className="span-link">About</span> */}
                                     </Link>
                                 </a>
                             </li>
@@ -43,7 +43,7 @@ const App = () => {
                                 <a href="#">
                                     <Link to="/resume">
                                         <i class="fas fa-file-alt"></i>
-                                        <span>Resume</span>
+                                        {/* <span>Resume</span> */}
                                     </Link>
                                 </a>
                             </li>
@@ -51,7 +51,7 @@ const App = () => {
                                 <a href="#">
                                     <Link to="/contact">
                                         <i class="fas fa-phone"></i>
-                                        <span>Contact</span>
+                                        {/* <span>Contact</span> */}
                                     </Link>
                                 </a>
                             </li>
