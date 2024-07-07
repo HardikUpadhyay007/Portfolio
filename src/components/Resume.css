@@ -87,3 +87,48 @@
     height: 100%;
     border-radius: inherit;
 }
+
+@media (max-width: 480px) {
+    .resume-div {
+        display: flex;
+        width: 100%; /* Adjusted to use full viewport width */
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 33%;
+        box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+    }
+
+    .resume-div * {
+        max-width: 100%; /* Ensures all child elements do not exceed the parent width */
+        box-sizing: border-box; /* Applies box-sizing to all child elements */
+    }
+
+    /* If there are specific elements causing overflow, adjust them individually */
+    .specific-element {
+        margin: 0;
+        padding: 0;
+        width: auto; /* or specific width in % or vw */
+    }
+    .resume-second-head {
+        font-size: 1.7rem;
+    }
+    .skill-measure {
+        margin-left: -1%;
+        width: 190%;
+    }
+    ul li {
+        font-size: 0.75rem; /* Smaller text within li elements */
+    }
+    .timeline {
+        margin-top: -7%;
+    }
+    .progress-bar {
+        height: 4px; /* Smaller progress bar height */
+        width: 100%;
+    }
+
+    .text-xl {
+        font-size: 0.875rem; /* Adjust text size for smaller screens */
+    }
+}

@@ -1,13 +1,12 @@
 import React from "react";
 import "./Resume.css";
-import "./About.css";
 export const Resume = () => {
     return (
-        <div className="w-2/4 font-poppins bg-eerie-grey  border border-gray-800 rounded-xl p-8 shadow-md ">
+        <div className="w-2/4 resume-div font-poppins bg-eerie-grey border border-gray-800 rounded-xl p-8 shadow-md ">
             <h1 className="text-4xl text-custom-grey font-bold">Resume</h1>
             <div className="w-6 h-[6px] bg-white rounded-lg mt-4"></div>
             <section className="design-section ">
-                <h1 className="text-4xl text-white font-semibold mb-10 mt-10">
+                <h1 className="text-4xl text-white resume-second-head font-semibold mb-10 mt-10">
                     Education
                 </h1>
 
@@ -58,8 +57,8 @@ export const Resume = () => {
                 </div>
                 <div className="hrcss w-[15rem] h-[6px] bg-white rounded-lg mt-10"></div>
             </section>
-            <section className="design-section ">
-                <h1 className="text-4xl text-white font-semibold mb-10 mt-10">
+            <section className="design-section project-div ">
+                <h1 className="text-4xl text-white resume-second-head font-semibold mb-10 mt-10">
                     Projects
                 </h1>
 
@@ -128,10 +127,10 @@ export const Resume = () => {
                 <div className="hrcss w-[15rem] h-[6px] bg-white rounded-lg mt-10"></div>
 
                 <section>
-                    <h2 className="text-4xl text-white font-semibold mb-10 mt-10">
+                    <h2 className="text-4xl resume-second-head text-white font-semibold mb-10 mt-10">
                         My Skills Measure
                     </h2>
-                    <ul className="ml-[-15rem]">
+                    <ul className="ml-[-15rem] skill-measure">
                         <li>
                             <div className="flex flex-row">
                                 <h3 className="text-xl text-white mr-5">

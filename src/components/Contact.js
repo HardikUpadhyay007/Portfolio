@@ -25,10 +25,10 @@ function Contact() {
         };
     }, [navigate]);
     return (
-        <div className="w-2/4 font-poppins bg-eerie-grey  border border-gray-800 rounded-xl p-8 shadow-md ">
+        <div className="w-2/4 font-poppins bg-eerie-grey contact-div border border-gray-800 rounded-xl p-8 shadow-md ">
             <h1 className="text-4xl text-custom-grey font-bold ">Contact Me</h1>
             <div className="w-6 h-[6px] bg-white rounded-lg mt-4 mb-[10rem]"></div>
-            <div className="contact-wrapper ml-[16rem]">
+            <div className="contact-wrapper flex flex-col items-center">
                 <form className="font-poppins" id=" contact-form">
                     <div className="mb-7">
                         <label
@@ -41,7 +41,7 @@ function Contact() {
                             type="text"
                             id="name"
                             name="name"
-                            className="mt-1 p-2 w-1/2 bg-eerie-grey border border-grey-200 rounded-md shadow-sm text-white "
+                            className="mt-1 p-2 w-[18rem] bg-eerie-grey border border-grey-200 rounded-md shadow-sm text-white "
                             required
                             placeholder="Name"
                         />
@@ -57,7 +57,7 @@ function Contact() {
                             type="email"
                             id="email"
                             name="email"
-                            className="mt-1 p-2 w-1/2 bg-eerie-grey border border-grey-200 rounded-md shadow-sm text-white "
+                            className="mt-1 p-2 w-[18rem] bg-eerie-grey border border-grey-200 rounded-md shadow-sm text-white "
                             placeholder="Email"
                             required
                         />
@@ -73,7 +73,7 @@ function Contact() {
                             type="tel"
                             id="phone"
                             name="phone"
-                            className="mt-1 p-2 w-1/2 bg-eerie-grey border border-grey-200 text-white rounded-md shadow-sm "
+                            className="mt-1 p-2 w-[18rem] bg-eerie-grey border border-grey-200 text-white rounded-md shadow-sm "
                             placeholder="Phone Number"
                             required
                         />
@@ -90,7 +90,7 @@ function Contact() {
                             name="message"
                             rows="4"
                             placeholder="Message me!"
-                            className="mt-1 p-2 w-1/2 bg-eerie-grey text-white border border-grey-200 rounded-md shadow-sm "
+                            className="mt-1 p-2 w-[18rem] bg-eerie-grey text-white border border-grey-200 rounded-md shadow-sm "
                         ></textarea>
                     </div>
                     <button

@@ -5,3 +5,19 @@
     border-image: var(--border-gradient-onyx);
     min-width: calc(10% - 10px);
 }
+@media (max-width: 480px) {
+    .contact-div {
+        margin-top: 32%;
+        margin-left: -0.98%;
+        width: 96%; /* Make the div span the full width of the viewport */
+        display: flex; /* Use flexbox to center the form */
+        flex-direction: column; /* Center the form vertically */
+        min-height: 100vh; /* Optional: Makes the div at least as tall as the viewport, remove if not needed */
+    }
+    .contact-form {
+        width: 100%; /* Make the form span the full width of the div */
+    }
+    .contact-wrapper {
+        margin-bottom: -30%;
+    }
+}
