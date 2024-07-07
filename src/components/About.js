@@ -42,10 +42,10 @@ export const About = () => {
                     <li className="card-color tech-item p-4 rounded-xl flex flex-row justify-center items-center gap-10">
                         <FaKeyboard className="text-3xl icon-item" />
                         <div className="flex text-item flex-col">
-                            <h1 className="text-xl mb-3 font-semibold">
+                            <h1 className="text-xl text-item-head mb-3 font-semibold">
                                 Programming Language
                             </h1>
-                            <p className="text-base para-text">
+                            <p className="text-base text-item-para para-text">
                                 C++, Python, C, Java
                             </p>
                         </div>
@@ -54,21 +54,21 @@ export const About = () => {
                     <li className="card-color p-4 tech-item rounded-xl flex flex-row justify-center items-center gap-10">
                         <MdOutlineDesignServices className="text-3xl" />
                         <div className="flex text-item flex-col">
-                            <h1 className="text-xl mb-3 font-semibold">
+                            <h1 className="text-xl text-item-head mb-3 font-semibold">
                                 FrontEnd Technologies
                             </h1>
-                            <p className="text-base para-text">
-                                HTML, CSS, Javascript,<br></br>Tailwind, ReactJs
+                            <p className="text-base text-item-para para-text">
+                                HTML, CSS, Javascript,Tailwind, ReactJs
                             </p>
                         </div>
                     </li>
                     <li className="card-color p-4 rounded-xl tech-item flex flex-row justify-center items-center gap-10">
                         <FaLaptopCode className="text-3xl" />
                         <div className="flex text-item flex-col">
-                            <h1 className="text-xl mb-3 font-semibold">
+                            <h1 className="text-xl text-item-head mb-3 font-semibold">
                                 BackEnd Technologies
                             </h1>
-                            <p className="text-base para-text">
+                            <p className="text-base text-item-para para-text">
                                 Javascript, NodeJS, ExpressJS
                             </p>
                         </div>
@@ -76,30 +76,32 @@ export const About = () => {
                     <li className="card-color p-4 rounded-xl tech-item flex flex-row justify-center items-center gap-10">
                         <FaDatabase className="text-3xl" />
                         <div className="flex text-item flex-col">
-                            <h1 className="text-xl mb-3 font-semibold">
+                            <h1 className="text-xl text-item-head mb-3 font-semibold">
                                 Database Technologies
                             </h1>
-                            <p className="text-base para-text">
-                                Mongo DB , SQL
+                            <p className="text-base text-item-para para-text">
+                                Mongo DB, SQL
                             </p>
                         </div>
                     </li>
                 </ul>
             </section>
             <section className="scroll-sction">
-                <h3 className="font-semibold scroll-heading text-3xl text-white mb-6">
+                <h3 className="font-semibold scroll-heading scrollitem text-2xl text-white mb-6">
                     What I Am Doing
                 </h3>
                 <ul class="scroll-wrapper">
                     <li class="scroll-item card-color-item ">
-                        <i class="fas text-7xl font-extralight text-white">
+                        <i class="fas scroll-icon text-7xl font-extralight text-white">
                             <FaStairs></FaStairs>
                         </i>
                         <div class="flex flex-col">
-                            <h1 class="text-xl mb-3 font-semibold text-white">
+                            <h1 class="text-xl mb-3 scroll-item-head font-semibold text-white">
                                 Learning
                             </h1>
-                            <p class="text-base text-white">ReactJS , NextJS</p>
+                            <p class="text-base scroll-item-para text-white">
+                                ReactJS , NextJS
+                            </p>
                         </div>
                     </li>
                     <li class="scroll-item card-color-item ">
@@ -110,7 +112,7 @@ export const About = () => {
                             <h1 class="text-xl mb-3 font-semibold text-white">
                                 Certification
                             </h1>
-                            <p class="text-base text-white">
+                            <p class="text-base scroll-item-para text-white">
                                 DSA (Abdul Bari) , AI Certification (Google
                                 Cloud)
                             </p>
@@ -124,7 +126,7 @@ export const About = () => {
                             <h1 class="text-xl mb-3 font-semibold text-white">
                                 Upsolving
                             </h1>
-                            <p class="text-base text-white">
+                            <p class="text-base scroll-item-para text-white">
                                 80+ Problems (Leetcode)
                             </p>
                         </div>

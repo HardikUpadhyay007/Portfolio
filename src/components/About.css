@@ -153,6 +153,40 @@
     background: #555; /* Darker shade on hover for better visibility */
 }
 
+@media (max-width: 340px) {
+    .second-main-heading {
+        font-size: 1rem;
+    }
+    .tech-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .tech-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-item-head {
+        margin-top: -8%;
+        font-size: 1rem;
+    }
+    .text-item-para {
+        margin-top: -4%;
+        font-size: 0.8rem;
+        white-space: wrap;
+    }
+    .scroll-heading {
+        white-space: nowrap;
+    }
+    .scroll-item-heading {
+        font-size: 0.8rem;
+    }
+    .scroll-item-para {
+        font-size: 15px;
+    }
+    /* Adjust the font sizes for better readability on small screens */
+}
 @media (max-width: 480px) {
     /* Styles for small phones */
     .container {
@@ -192,7 +226,7 @@
         /* margin-left: 2%; */
     }
     .scroll-heading {
-        font-size: 30px;
+        font-size: 25px;
     }
     .scroll-wrapper {
         height: 8rem;

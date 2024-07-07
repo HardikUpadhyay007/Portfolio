@@ -105,6 +105,11 @@
 .boxshadow {
     box-shadow: 0 0 10px #fff;
 }
+@media (max-width: 340px) {
+    .main-div {
+        margin-top: -5%;
+    }
+}
 @media (max-width: 480px) {
     /* Styles for small phones */
     .main-div {
@@ -114,7 +119,7 @@
         width: 98%; /* Increase width */
         height: auto; /* Adjust height to content */
         flex-direction: row;
-        margin-top: -13%;
+        margin-top: -17%;
         margin-left: 0.79%;
         box-shadow: none;
     }
@@ -124,13 +129,7 @@
         margin-right: 10px; /* Add some space between the figure and the headings */
         margin-top: 2%;
     }
-    .figure-div figure {
-        padding: 5px; /* Increased from p-5 for a larger area */
-        width: 150%;
-    }
-
     .avatar-img {
-        width: 150%; /* Ensure the image fills the figure element */
         height: auto; /* Maintain aspect ratio */
     }
     .figure-div {
@@ -139,6 +138,10 @@
         justify-content: center;
         flex-direction: row;
     }
+    .img-div {
+        display: none;
+    }
+
     .name-heading {
         display: flex;
         margin-top: -1rem;

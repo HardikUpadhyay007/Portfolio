@@ -6,8 +6,8 @@ export const Sidebar = () => {
     return (
         <div className="w-68 text-custom-grey main-div boxshadow relative bottom-[-7.5rem] top-13 h-full  mx-1 my-3 mb-0  z-10 bg-eerie-grey border border-gray-800 rounded-xl p-2 shadow-md">
             <div className="flex figure-div items-center flex-col">
-                <figure className="bg-avatar-color p-5 m-3 rounded-xl">
-                    <img src={AvatarImg} className="avatar-img"></img>
+                <figure className="bg-avatar-color img-div p-5 m-3 rounded-xl">
+                    <img src={AvatarImg} className="avatar-img "></img>
                 </figure>
                 <div className="flex flex-col name-heading items-center text-white mt-4 font-poppins">
                     <h2 className="text-2xl font-bold name tracking-wide m-4">
